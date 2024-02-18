@@ -1,4 +1,10 @@
 local currenttoken = nil
+local whitelist = {
+    "EventName",
+    "AnotherEventNameHere",
+    "YetAnotherEventName"
+} --add any event you want to this list and it wont automatically add a token to it on the client side
+
 function hObQlNRJwiz7h3KCeLeOTkmjo5ufdXDJDQS93wJ6lNA3zdP9BF(pEvent, ...)
     local payload = msgpack.pack({...})
 
